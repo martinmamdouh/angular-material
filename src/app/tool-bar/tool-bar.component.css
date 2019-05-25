@@ -1,0 +1,34 @@
+mat-toolbar{
+       position: fixed;
+       top:0;
+       left:25%;
+       background-color:rgba(197, 228, 238, 0.34);
+       min-width :100%;
+}
+mat-toolbar-row{ 
+       position: relative;
+       right: 0 !important;}
+.toolBarChoices{
+
+       border:none;
+       margin-left: 5px;
+}
+.toolBarChoices:hover{
+       
+       color :black;
+       font-style: italic;
+       font-weight: bold;
+       cursor: pointer;
+   
+       
+}
+.selectedToolbar{
+       cursor: pointer;
+       color :black;
+       font-style: italic;
+       font-weight: bold;
+       border-bottom-style:solid;
+       border-bottom-width:3px;
+       border-bottom-style:solid;
+       border-bottom-color:  rgb(255, 0, 242);
+}

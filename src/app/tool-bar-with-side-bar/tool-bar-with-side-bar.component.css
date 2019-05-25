@@ -1,0 +1,170 @@
+     
+mat-sidenav-container {
+       position: absolute;
+       top:10%;
+       bottom: 0px;
+       left:0;
+       right:0;
+       background-color: grey;
+       background-image: url('https://www.dmsservicesgoa.com/dms/wp-content/uploads/2017/11/developer-bg.jpg');
+       background-repeat: no-repeat;
+       background-size: 100% 35%;
+       background-position: left top;
+       background-clip: padding-box;   
+     }
+
+mat-sidenav{
+       
+       color:white;
+       background-color:#607D8B;
+       
+       min-height: 90%;
+       max-width: 25%;}
+
+mat-sidenav-content {
+       background-color:rgba(238, 221, 221,0.2);
+       width: 100%;
+       
+
+}
+ul {
+       list-style-type: none;
+       
+       padding: 0;
+     }
+li{
+       text-align: center;
+       background-color: #CFD8DC;
+       color: #607D8B;
+       cursor: pointer;
+       position: relative;
+       left: 0; 
+       margin: .5em;
+       padding: 15px 15px 15px 15px ;
+       border-radius: 8px;
+
+
+}
+li:hover {
+       background-color: #CFD8DC;
+       color: #607D8B;
+       left: 3px;
+       border-left-style: solid;
+       border-left-width: 8px;
+       border-left-color:rgba(18, 104, 22, 0.374);
+     }
+.selected {
+       background-color: rgba(128, 219, 132, 0.274)!important;
+       color: #CFD8DC;
+       left: 3px;
+       border: none;
+
+     }
+.selected:hover{
+       background-color: rgba(128, 219, 132, 0.274)!important;
+       color: #CFD8DC;
+       left: 3px;
+       border: none;
+
+     }
+
+
+
+.sm-img {
+       border-radius: 50%;
+       height: 80%;
+       width: 5%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top:10px;
+       margin-bottom: auto;
+       
+     }
+.sm-img:hover {
+       border-radius: 50%;
+       height: 80%;
+       width: 5%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top:10px;
+       margin-bottom: auto;
+       border-style:solid; 
+       border-color: #607D8B;
+     }
+.md-img {
+       border-radius: 50%;
+       height: 20%;
+       width: 50%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top:10px;
+       margin-bottom: auto;
+       
+     }
+.md-img:hover {
+       border-radius: 50%;
+       border-style:solid; 
+       border-color: #607D8B;
+       height: 20%;
+       width: 50%;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top:10px;
+       margin-bottom: auto;
+
+       
+     }
+
+.center{
+     
+       margin-left: 35%;
+       margin-right: 25%;
+
+}
+
+/* toolbar csss   */
+mat-toolbar{
+       position: absolute;
+       top:0;
+       left:0;
+       bottom: 90%;
+       width:100%;
+       background-color:#607D8B;
+       min-width :100%;
+       min-height:10%;
+}
+mat-toolbar-row{ 
+       
+       position: relative;
+       padding-left:100px; 
+}
+.toolBarChoices{
+       color:white;
+       cursor: pointer;
+       border:none;
+       margin-left: 5px;
+}
+.toolBarChoices:hover{
+       cursor: pointer;
+       color :black;
+       font-style: italic;
+       font-weight: bold;
+   
+       
+}
+.selectedToolbar{
+       cursor: pointer;
+       color :black;
+       font-style: italic;
+       font-weight: bold;
+       border-bottom-style:solid;
+       border-bottom-width:3px;
+       border-bottom-style:solid;
+       border-bottom-color:  rgb(255, 0, 242);
+}
+       
+    

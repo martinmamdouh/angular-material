@@ -1,0 +1,8 @@
+<mat-toolbar>
+  <mat-toolbar-row >
+    <span *ngFor="let choice of choices" class='toolBarChoices' 
+    (click)="onSelect(choice)"
+    [class.selectedToolbar]="selctedChoice===choice"
+    >{{choice}}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
