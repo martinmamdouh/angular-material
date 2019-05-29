@@ -5,24 +5,25 @@ mat-sidenav-container {
        bottom: 0px;
        left:0;
        right:0;
-       background-color: grey;
-       background-image: url('https://www.dmsservicesgoa.com/dms/wp-content/uploads/2017/11/developer-bg.jpg');
+       background-color: grey;/*
+       background-image:url(https://developer.pixelgrapes.com/wp-content/uploads/2015/12/cropped-img-007.jpg);
        background-repeat: no-repeat;
-       background-size: 100% 35%;
+       background-size: 100% 100%;
        background-position: left top;
-       background-clip: padding-box;   
+       background-clip: padding-box;  
+       */ 
      }
 
 mat-sidenav{
        
        color:white;
-       background-color:#607D8B;
-       
+       /*background-color:rgba(238, 221, 201,0.5);*/
+       background-color:rgba(244, 244, 244,0.5);
        min-height: 90%;
        max-width: 25%;}
 
 mat-sidenav-content {
-       background-color:rgba(238, 221, 221,0.2);
+       background-color:rgba(244, 244, 244,0.8);
        width: 100%;
        
 
@@ -35,36 +36,43 @@ ul {
 li{
        text-align: center;
        background-color: #CFD8DC;
+       background-color: rgb(149, 160, 155);
        color: #607D8B;
+       color: white;
        cursor: pointer;
        position: relative;
        left: 0; 
        margin: .5em;
        padding: 15px 15px 15px 15px ;
        border-radius: 8px;
+       outline: 0;
 
 
 }
 li:hover {
-       background-color: #CFD8DC;
+       /*background-color: #CFD8DC;*/
+       background-color:rgb(232, 237, 234);
        color: #607D8B;
        left: 3px;
        border-left-style: solid;
        border-left-width: 8px;
        border-left-color:rgba(18, 104, 22, 0.374);
+       outline: 0;
      }
 .selected {
-       background-color: rgba(128, 219, 132, 0.274)!important;
-       color: #CFD8DC;
+       background-color: #607D8B ;
+       color: white;
        left: 3px;
        border: none;
+       outline: 0;
 
      }
 .selected:hover{
-       background-color: rgba(128, 219, 132, 0.274)!important;
+       background-color: #607D8B ;
        color: #CFD8DC;
        left: 3px;
        border: none;
+       outline: 0;
 
      }
 
@@ -119,11 +127,21 @@ li:hover {
        
      }
 
+.center_toolbar{
+      text-align: center;
+      font-weight: bold;
+      
+}
 .center{
      
        margin-left: 35%;
        margin-right: 25%;
 
+}
+.navigation_container{
+      position: absolute;
+      top:55%;
+      left:2%;
 }
 
 /* toolbar csss   */
@@ -134,25 +152,31 @@ mat-toolbar{
        bottom: 90%;
        width:100%;
        background-color:#607D8B;
+       /*background-color:rgba(179, 181, 183,0.5);*/
        min-width :100%;
        min-height:10%;
+       
 }
 mat-toolbar-row{ 
        
        position: relative;
-       padding-left:100px; 
+       padding-left:10px; 
+       min-height:15%;
+       margin-bottom: 0;
 }
 .toolBarChoices{
        color:white;
        cursor: pointer;
        border:none;
-       margin-left: 5px;
+       margin-left: 15px;
+       outline: 0;
 }
 .toolBarChoices:hover{
        cursor: pointer;
        color :black;
        font-style: italic;
        font-weight: bold;
+       outline: 0;
    
        
 }
@@ -165,6 +189,6 @@ mat-toolbar-row{
        border-bottom-width:3px;
        border-bottom-style:solid;
        border-bottom-color:  rgb(255, 0, 242);
+       outline: 0;
 }
        
-    

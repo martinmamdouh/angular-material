@@ -9,40 +9,56 @@ import { sideBarContentInterface } from '../side-bar/sideBarContentInterface';
 export class ToolBarWithSideBarComponent implements OnInit {
   @Input()
   sideBarContentList:sideBarContentInterface[];
-  selectedTitle:string;
-  TBarChoices:string[];
-  selctedChoice:string;
+  selctedChoice:string='Stack';
   closed=true;
+  profImg='assets/black_white_pic.jpg'
   constructor() { }
 
   ngOnInit() {
     this.sideBarContentList=[
       {
-        title:'stack',
+        title:'Stack',
         path:'/stack/list'
       },
       {
-      title:'courses',
+      title:'Courses',
       path:'/courses/list'
       },
       {
-        title:'projects',
+        title:'Projects',
         path:'/courses/list'
         },
       {
-          title:'work experince',
+          title:'Professional Experience',
           path:'/courses/list'
       },
+      {
+         title:'Contact me',
+          path:'/contact'
+      }
+      
   ];
-  this.TBarChoices =['Home','LogIn','LogOut']
+  //this.TBarChoices =['About','Products','Stack','Professional Experience','Contact me']
   }
-  onSideSelect(title){
-    this.selectedTitle=title;
-  }
+  
   onSelect(choice){
     this.selctedChoice=choice;
+    
   }
-  SideBarclosed(){
-    this.closed=!this.closed
+  SideBarClosed(){
+    this.closed=true
   }
+    SideBarOpened(){
+    this.closed=false
+  }
+  chngProfImgClr(mouseState){
+    if (mouseState=='hover'){
+      this.profImg='assets/high_brightness_pic.jpg'
+    }
+    else if (mouseState == 'out'){
+      this.profImg='assets/black_white_pic.jpg'
+    }
+
+  }
+
 }

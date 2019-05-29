@@ -8,7 +8,7 @@ import {MatIconModule} from '@angular/material/icon'
 import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatToolbarModule} from '@angular/material/toolbar'
-
+import {MatTabsModule} from '@angular/material/tabs';
 //
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +16,9 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ToolBarWithSideBarComponent } from './tool-bar-with-side-bar/tool-bar-with-side-bar.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
-
+import { VideoBgComponent } from './video-bg/video-bg.component';
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,11 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
   
     ToolBarWithSideBarComponent,
   
-    ToolBarComponent
+    ToolBarComponent,
+  
+    VideoBgComponent,
+  
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,8 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     MatSidenavModule,
     MatButtonToggleModule,
     MatToolbarModule,
-
+    MatTabsModule,
+    FormsModule,
     AppRoutingModule,
   ],
   providers: [],

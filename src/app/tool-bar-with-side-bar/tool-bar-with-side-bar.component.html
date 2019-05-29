@@ -1,35 +1,38 @@
-
 <div class="row">
     <mat-toolbar>
         <mat-toolbar-row >
-          <button mat-icon-button (click)="sidenav.toggle();SideBarclosed()">
-
+          <button mat-icon-button (click)="sidenav.toggle();">
                 <mat-icon *ngIf='closed'>menu</mat-icon>
                 <mat-icon *ngIf='!closed'>close</mat-icon>
           </button> 
-          
-          
-          
-          <span *ngFor="let choice of TBarChoices" class='toolBarChoices' 
-
-          (click)="onSelect(choice)"
-          [class.selectedToolbar]="selctedChoice===choice"
-          >{{choice}}</span>
+          <div class='center_toolbar col-10'>
+            
+          <span  *ngFor="let choice of sideBarContentList" class='toolBarChoices' 
+          (click)="onSelect(choice.title);sidenav.close()"
+          [routerLink]='choice.path' 
+          [class.selectedToolbar]="selctedChoice===choice.title"
+          >{{choice.title}}</span>
+          </div>
           <span style="flex: 1 1 auto;"></span>
-          <img class="sm-img" src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_960_720.jpg">
+          <img class="sm-img" [src]="profImg"
+            (mouseover)='chngProfImgClr("hover")'
+            (mouseout)='chngProfImgClr("out")'>
         </mat-toolbar-row>
-      </mat-toolbar>
+    </mat-toolbar>
 
     <mat-sidenav-container   >
-  
-      <mat-sidenav   class="col-3" mode='over'  #sidenav   ><!--opened   use opened if u want it opened as default-->
+
+      <mat-sidenav (opened)="closed=false" (closed)="closed=true" class="col-3" mode='over'  #sidenav   ><!--opened   use opened if u want it opened as default-->
         
-        <img class="md-img" src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_960_720.jpg">
+        <img class="md-img" 
+        [src]="profImg"
+            (mouseover)='chngProfImgClr("hover")'
+            (mouseout)='chngProfImgClr("out")'>
         <p class="center">Martin Mamdouh</p>
         <ul>
           <li *ngFor="let content of sideBarContentList"
-              (click)="onSideSelect(content.title);sidenav.toggle();SideBarclosed()"
-              [class.selected]="content.title===selectedTitle"
+              (click)="onSelect(content.title);sidenav.toggle();"
+              [class.selected]="selctedChoice===content.title"
               [routerLink]='content.path' >{{content.title}}
                
           </li>
@@ -38,9 +41,13 @@
 
         
       </mat-sidenav>
-      <mat-sidenav-content   class="col-9"> 
-        ddddddsssssssssssssssssssssss
-        <router-outlet></router-outlet>
+
+       <mat-sidenav-content   class="col-9"> 
+        <app-video-bg></app-video-bg>
+        <div  class='navigation_container'>
+          <router-outlet></router-outlet>
+          
+        </div>
       </mat-sidenav-content>
     </mat-sidenav-container>
 
