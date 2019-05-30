@@ -9,7 +9,7 @@ import { sideBarContentInterface } from '../side-bar/sideBarContentInterface';
 export class ToolBarWithSideBarComponent implements OnInit {
   @Input()
   sideBarContentList:sideBarContentInterface[];
-  selctedChoice:string='Stack';
+  selctedChoice:string;
   closed=true;
   profImg='assets/black_white_pic.jpg'
   constructor() { }
