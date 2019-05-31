@@ -5,7 +5,10 @@ mat-sidenav-container {
        bottom: 0px;
        left:0;
        right:0;
-       background-color: grey;/*
+       background-color: #607D8B;
+       
+       min-width: 100%;
+       /*
        background-image:url(https://developer.pixelgrapes.com/wp-content/uploads/2015/12/cropped-img-007.jpg);
        background-repeat: no-repeat;
        background-size: 100% 100%;
@@ -23,7 +26,7 @@ mat-sidenav{
        max-width: 25%;}
 
 mat-sidenav-content {
-       background-color:rgba(244, 244, 244,0.8);
+       
        width: 100%;
        
 
@@ -36,8 +39,7 @@ ul {
 li{
        text-align: center;
        background-color: #CFD8DC;
-       background-color: rgb(149, 160, 155);
-       color: #607D8B;
+       background-color: rgba(96, 125, 139, .7);
        color: white;
        cursor: pointer;
        position: relative;
@@ -52,19 +54,23 @@ li{
 li:hover {
        /*background-color: #CFD8DC;*/
        background-color:rgb(232, 237, 234);
-       color: #607D8B;
+       background-color:white;
+       color: rgb(96, 125, 139);
        left: 3px;
        border-left-style: solid;
        border-left-width: 8px;
-       border-left-color:rgba(18, 104, 22, 0.374);
+       border-left-color:rgb(96, 125, 139);
        outline: 0;
      }
-.selected {
+.selected  {
        background-color: #607D8B ;
        color: white;
        left: 3px;
        border: none;
        outline: 0;
+       border-left-style: solid;
+       border-left-width: 8px;
+       border-left-color:white;
 
      }
 .selected:hover{
@@ -73,6 +79,9 @@ li:hover {
        left: 3px;
        border: none;
        outline: 0;
+      border-left-style: solid;
+       border-left-width: 8px;
+       border-left-color:rgba(18, 104, 22, 0.374);
 
      }
 
@@ -139,9 +148,12 @@ li:hover {
 
 }
 .navigation_container{
-      position: absolute;
-      top:55%;
+      position: relative;
+      top:5%;
       left:2%;
+      width: auto;
+      
+      
 }
 
 /* toolbar csss   */
@@ -163,13 +175,19 @@ mat-toolbar-row{
        padding-left:10px; 
        min-height:15%;
        margin-bottom: 0;
+       width:100%;
+       min-width :100%;
 }
 .toolBarChoices{
        color:white;
        cursor: pointer;
        border:none;
        margin-left: 15px;
+       padding-bottom: 2px;
        outline: 0;
+       font-size:1.2vw;
+       font-style: italic;
+
 }
 .toolBarChoices:hover{
        cursor: pointer;
@@ -189,6 +207,7 @@ mat-toolbar-row{
        border-bottom-width:3px;
        border-bottom-style:solid;
        border-bottom-color:  rgb(255, 0, 242);
+        border-bottom-color:  white;
        outline: 0;
 }
        

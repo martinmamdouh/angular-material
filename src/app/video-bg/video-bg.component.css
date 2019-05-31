@@ -10,17 +10,18 @@
  	background-size: 100% 100%;
  	background-position: right top;
  	background-attachment: fixed;
- 	overflow: hidden;
+ 	overflow: hidden ;
+ 	display: block-inline;
  	z-index: -1;
 
 }
 
 .title{
 	position: relative;
-	display: block-inline;
+	bottom: 10%;
 	text-align: center;
-	font-family: Courier New;
-	font-size: 80px;
+	
+	font-size:5vw;
 	padding-bottom: 80px;
 	font-style: oblique;
 	font-weight: bold;
@@ -28,11 +29,13 @@
   	text-shadow: 2px 2px 4px #222222;
 	z-index: 2;
 
+
+
 }
 .second_bg{
 	position: absolute;
   	/*background-color:rgba(238, 221, 221,0.6);*/
-  	background-color:rgba(222, 223, 224,0.4);
+  	background-color:rgba(222, 223, 224,0.8);
   	top:0%;
   	bottom: 0%;
   	height: 100%;
