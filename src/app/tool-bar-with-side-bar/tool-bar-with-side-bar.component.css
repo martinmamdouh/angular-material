@@ -19,7 +19,8 @@ mat-sidenav-container {
 
 mat-sidenav{
        
-       color:white;
+       color:rgba(96, 125, 139, 1);
+       font-size:1.2vw;
        /*background-color:rgba(238, 221, 201,0.5);*/
        background-color:rgba(244, 244, 244,0.5);
        min-height: 90%;

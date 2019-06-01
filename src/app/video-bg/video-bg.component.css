@@ -35,7 +35,7 @@
 .second_bg{
 	position: absolute;
   	/*background-color:rgba(238, 221, 221,0.6);*/
-  	background-color:rgba(222, 223, 224,0.8);
+  	background-color:rgba(222, 223, 224,0.6);
   	top:0%;
   	bottom: 0%;
   	height: 100%;
