@@ -19,6 +19,8 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { VideoBgComponent } from './video-bg/video-bg.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+
+import{StackListComponent} from './stack/stack-list/stack-list.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { AboutComponent } from './about/about.component';
   
     VideoBgComponent,
   
-    AboutComponent
+    AboutComponent,
+    StackListComponent
   ],
   imports: [
     BrowserModule,

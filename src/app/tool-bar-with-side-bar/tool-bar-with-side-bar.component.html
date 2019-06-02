@@ -45,7 +45,10 @@
        <mat-sidenav-content   class="col-9"> 
         <app-video-bg></app-video-bg>
         <div  class='navigation_container'>
-          <router-outlet></router-outlet>
+
+          <ng-content select='.stack' *ngIf='selctedChoice=="Stack"'></ng-content>
+          <ng-content select='.courses' *ngIf='selctedChoice=="Courses"'></ng-content>
+          <!--<router-outlet></router-outlet>-->
           
         </div>
       </mat-sidenav-content>
